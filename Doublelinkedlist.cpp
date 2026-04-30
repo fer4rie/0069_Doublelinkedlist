@@ -207,7 +207,7 @@ public:
         }
         else
         {
-            cout << "\nRecord found\n";
+            cout << "Record found\n";
             cout << "Roll number: " << current->noMhs << endl;
         }
     }
