@@ -146,3 +146,9 @@ public:
         {
 
             cout << i + 1 << ". " << currentNode->noMhs << " " << endl;
+
+            // step 3: Move to next node
+            currentNode = currentNode->next;
+            i++;
+        }
+    }
