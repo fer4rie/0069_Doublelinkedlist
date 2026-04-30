@@ -160,3 +160,12 @@ public:
             cout << "\nList is empty" << endl;
             return;
         }
+
+        // step 1: Move to last node
+        Node *currentNode = START;
+        int i = 0;
+        while (currentNode->next != NULL)
+        {
+            currentNode = currentNode->next;
+            i++;
+        }
