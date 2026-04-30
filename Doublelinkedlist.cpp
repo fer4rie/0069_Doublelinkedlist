@@ -117,8 +117,13 @@ public:
         {
             // step 3: Link previous node to the next of current
             current->prev->next = current->next; 
-            
+
             // step 4: If current is not the Last node
             if (current->next != NULL)
                 current->next->prev = current->prev;
         }
+
+        // step 5: Delete the node
+        delete current;
+        cout << "Record with roll number " << rollNo << " deleted " << endl;
+    }
